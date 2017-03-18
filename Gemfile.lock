@@ -60,6 +60,7 @@ GEM
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     rack (1.6.5)
+    rack-cors (0.4.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.5.1)
@@ -111,6 +112,7 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers (~> 0.8.3)
   faker
+  rack-cors
   rails (= 4.2.5.1)
   rails-api
   spring
