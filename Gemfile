@@ -9,7 +9,7 @@ gem 'spring', :group => :development
 
 
 gem 'sqlite3'
-
+gem 'faker'
 
 
 # To use ActiveModel has_secure_password
