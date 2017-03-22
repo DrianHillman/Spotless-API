@@ -1,7 +1,5 @@
 class PlaylistSerializer < ActiveModel::Serializer
-  attributes :id, :title, :author
+  attributes :id, :title, :spotify_id
 
-  def author
-    Faker::Name.name
-  end
+  
 end

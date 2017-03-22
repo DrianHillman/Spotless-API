@@ -6,8 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-20.times do
+user = RSpotify::User.find('dhillman24')
+user.playlists.each do |specific_playlist|
   Playlist.create(
-    title: Faker::Lorem.words.join(' ')
+    title: specific_playlist.name,
+    spotify_id: specific_playlist.id
   )
 end
