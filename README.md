@@ -1,5 +1,5 @@
-# Spotless API
-> Testing out the spotify API in a ruby environment
+# Spotless API Project
+> Testing out the Spotify API in a Ruby environment
 
 ##### This repository is my starting ground for the Open Source project. Open roads ahead.
 
