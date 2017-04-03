@@ -14,6 +14,7 @@ gem 'active_model_serializers', '~> 0.8.3'
 gem 'rack-cors'
 gem 'rspotify'
 gem 'figaro', '1.0'
+gem 'graphql'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -29,3 +30,5 @@ gem 'figaro', '1.0'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'graphiql-rails', group: :development
