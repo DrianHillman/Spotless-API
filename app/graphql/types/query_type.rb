@@ -6,8 +6,21 @@ Types::QueryType = GraphQL::ObjectType.define do
   field :allPlaylists, types.String do
     description "Playlists that belong to the user"
     resolve ->(obj, args, ctx) {
-      "Hello World!"
-      # Playlist.all.map { |x| x }
+      Playlist.all.map { |x| x }
+    }
+  end
+
+  field :allIDs, types.String do
+    description "The id of all playlists"
+    resolve ->(obj, args, ctx) {
+      Playlist.all.map { |x| x.id }
+    }
+  end
+
+  field :allTitles, types.String do
+    description "The titles of all playlists"
+    resolve ->(obj, args, ctx) {
+      Playlist.all.map { |x| x.title }
     }
   end
 end
