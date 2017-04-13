@@ -10,7 +10,7 @@ Types::QueryType = GraphQL::ObjectType.define do
     }
   end
 
-  field :allIDs, types[String] do
+  field :allIDs, types.String do
     description "The id of all playlists"
     resolve ->(obj, args, ctx) {
       Playlist.all.map { |x| x.id }
