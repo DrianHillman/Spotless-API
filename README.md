@@ -1,38 +1,44 @@
 # Spotless API Project
-> Testing out the Spotify API in a Ruby environment
-
-##### This repository is my starting ground for the Open Source project. Open roads ahead.
-
-<br/>
+> Experiment with the Spotify API using GraphQL in a Ruby environment!
 
 ![Image](http://routenote.com/blog/wp-content/uploads/2015/12/running-og.jpg)
 
+## Getting Started
+### 1. Clone the repository
+`git clone https://github.com/DrianHillman/Spotless-API.git` **or**
 
-<!-- == README
+`git clone git@github.com:DrianHillman/Spotless-API.git`
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### 2. Register a new app with Spotify
+- Create a [Spotify developer account](https://developer.spotify.com)
+- Under **My Apps**, create a new application
 
-Things you may want to cover:
+### 3. Create `application.yml`
 
-* Ruby version
+- Create a new file titled `application.yml` within `app` > `config`
+> `touch app/config/application.yml`
+- Based on `application.example.yml`, enter the variables for `SPOTIFY_CLIENT_ID:` &
+`SPOTIFY_CLIENT_SECRET:` provided by your [Spotify developer account](https://developer.spotify.com/my-applications)
 
-* System dependencies
+### 4. Manage your Seed Data
+Open `db` > `seeds.rb` to manage your data pulled into the application
 
-* Configuration
+Update the first line to be sure that your Spotify user data is pulled into the application
+> `user = RSpotify::User.find('YOUR_USERNAME_HERE')`
 
-* Database creation
+_***This step to change later**_
 
-* Database initialization
+### 5. Run locally
 
-* How to run the test suite
+> Run `bundle install`
+>
+> Run `rails s` to start the rails server
 
-* Services (job queues, cache servers, search engines, etc.)
+#### 🎉 Navigate to `http://localhost:3000/graphiql` to view your data through GraphQL!
 
-* Deployment instructions
+## FAQs
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>. -->
+#### How do I use GraphQL?
+Check out the [GraphQL documentation here!](https://developer.github.com/early-access/graphql/)
+#### How do I use Graphiql?
+This app uses the `graphiql-rails` gem, check out [its documentation here!](https://github.com/rmosolgo/graphiql-rails)
