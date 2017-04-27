@@ -8,7 +8,7 @@ gem 'rails-api'
 gem 'spring', :group => :development
 
 
-gem 'sqlite3'
+gem 'pg'
 gem 'faker'
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'rack-cors'
