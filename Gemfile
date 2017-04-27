@@ -1,9 +1,7 @@
 source 'https://rubygems.org'
 
 
-gem 'rails', '4.2.5.1'
-
-gem 'rails-api'
+gem 'rails', '~> 5'
 
 gem 'spring', :group => :development
 
@@ -12,7 +10,7 @@ gem 'pg'
 gem 'faker'
 gem 'active_model_serializers', '~> 0.8.3'
 gem 'rack-cors'
-gem 'rspotify'
+gem 'rspotify', '~> 1.20.0'
 gem 'figaro', '1.0'
 gem 'graphql'
 
@@ -31,4 +29,4 @@ gem 'graphql'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
-gem 'graphiql-rails', group: :development
+gem 'graphiql-rails'
